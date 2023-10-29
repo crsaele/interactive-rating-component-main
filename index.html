@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="custom.css">
+  <!-- font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- page title -->
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+<!-- rating card start -->
+  <div class="state card rounded-3xl">
+    <div class="logo-container my-4">
+      <div class="circle">
+        <img src="images/icon-star.svg" alt="icon star">
+      </div>
+    </div>
+    <h1 class="text-white my-5 font-bold text-3xl">How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is
+      appreciated
+      to help us improve our offering!</p>
+
+    <div class="number-container text-white flex justify-between my-5">
+        <button class="circle rating-number hover:bg-gray-400 active:bg-orange-600 focus:bg-orange-600">1</button>
+        <button class="circle rating-number hover:bg-gray-400 active:bg-orange-600 focus:bg-orange-600">2</button>
+        <button class="circle rating-number hover:bg-gray-400 active:bg-orange-600 focus:bg-orange-600">3</button>
+        <button class="circle rating-number hover:bg-gray-400 active:bg-orange-600 focus:bg-orange-600">4</button>
+        <button class="circle rating-number hover:bg-gray-400 active:bg-orange-600 focus:bg-orange-600">5</button>
+    </div>
+    <div class="flex justify-center align-middle">
+      <button class="bg-orange-400 px-32 text-white text-center hover:bg-gray-400" id="submit-btn">Submit</button>
+    </div>
+  </div>
+  <!-- rating card component end -->
+
+  <!-- thank you state card component start -->
+  <section class="completed-state p-5 rounded-3xl">
+    <img class="state-image my-5" src="images/illustration-thank-you.svg" alt="thank you image">
+    <div class="state-result mt-5">You selected <span id="result">4</span> out of  5</div>
+    <h2 class="text-white text-2xl my-2">Thank you!</h2>
+    <p class="my-5 text-center">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+  </section>
+  <!-- thank you state card component end -->
+  <!-- javascript  -->
+  <script src="main.js"></script>
+</body>
+</html>
